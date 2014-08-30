@@ -13,19 +13,20 @@ public class Armet {
         boolean pp = false;
         for (c = 0; c < ar2.length; c++) {
             for (d=0;d<ar1.length;d++) {
+                System.out.println("d= "+d+"c="+c);
                 if ((ar2[c].equals(ar1[d]))) {
                     pp = false;
                     break;
                 }
                 pp = true;
-             }
+            }
             if (pp) {
                 ar[ar1.length + f] = ar2[c];
                 f++;
                 e = ar1.length + f;
                 pp = false;
             }
-
+            System.out.println(Arrays.toString(ar));
         }
 
         ar = Arrays.copyOf(ar, e);
